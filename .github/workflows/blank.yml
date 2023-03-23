@@ -34,6 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          sudo apt install openjdk-11-jdk
           git clone https://github.com/COVESA/capicxx-core-tools.git
           cd capicxx-core-tools/org.genivi.commonapi.core.releng
           mvn -Dtarget.id=org.genivi.commonapi.core.target clean verify
