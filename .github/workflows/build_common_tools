@@ -34,7 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          sudo apt install openjdk-11-jdk
+          #sudo apt install openjdk-11-jdk
+          sudo add-apt-repository ppa:linuxuprising/java
+          sudo apt-get update
+          sudo apt install oracle-java11-installer
+          
           git clone https://github.com/COVESA/capicxx-core-tools.git
           cd capicxx-core-tools/org.genivi.commonapi.core.releng
           mvn -Dtarget.id=org.genivi.commonapi.core.target clean verify
