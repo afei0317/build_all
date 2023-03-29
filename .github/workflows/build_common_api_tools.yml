@@ -34,7 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          sudo apt install openjdk-11-jdk
+          sudo apt install openjdk-8-jdk
           #sudo add-apt-repository ppa:linuxuprising/java
           #sudo apt-get update
           #sudo apt install oracle-java11-installer
